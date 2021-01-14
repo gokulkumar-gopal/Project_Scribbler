@@ -15,23 +15,14 @@
     font-style: italic;
 }
 
-#signup, #signin {
+#signup-btn, #signin-btn {
     float: right;
-    margin: 0 10px 0 10px;
+    margin: 10px 10px 0 10px;
     font-size: 20px;
     padding: 0 15px 0 15px;
     background-color: blue;
     color: white;
 }
-
-/*
-#homepage img
-{
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    z-index: 1;
-}*/
 
 #homepage {
     height: 90vh;
@@ -40,6 +31,48 @@
     background-size: cover; 
     background-position: absolute;
     width: 100%;
+}
+
+#createposts-btn, #allposts-btn {
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: orange;
+    color: black;
+}
+
+#signup-form, #signin-form, #create-post-form {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#name, #username, #password, #con-password, #title, #contents {
+    margin: 10px 10px 10px 0;
+    width: 300px;
+    background-color: lightgrey;
+    padding: 5px 0 5px 0;
+}
+
+#get-started, #welcome-back, #pen-your-post {
+    font-family: 'Ubuntu Mono';
+    font-size: x-large;
+    margin: 0;
+}
+
+#singup-submit-btn, #signin-submit-btn, #create-post-btn {
+    background-color: green;
+    padding: 5px;
+    width:300px;
+    margin: 0 5px 0 5px;
+}
+
+#create-post-btn {
+    margin: 0 auto;
+    display: block;
+}
+
+#not-a-member {
+    text-align: center;
 }
 
 #posts {
@@ -52,10 +85,52 @@
     transform: translate(-50%, -50%);
 }
 
-#createposts, #allposts {
-    margin: 0 10px 0 10px;
-    font-size: 20px;
-    padding: 10px;
-    background-color: orange;
+#signup-modal, #signin-modal {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    background-color: whitesmoke;
+    padding: 20px; 
+}
+
+#create-post-modal {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 550px;
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+/* The Close Button */
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+#close:hover,
+#close:focus {
     color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#contents {
+    width: 1200px;
+    height: 350px;
+  }
+
+#title {
+    width: 1200px;
 }
