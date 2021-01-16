@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" type="text/css" href="../styles/post.css" />
+    <script src="../scripts/post.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="filldetails()">
+    <!-- TODO: Include code for header here -->
+    <div id="header">
+        <label id="logo">ScriBBler</label>
+        <button id="signup-btn">Sign Up</button>
+        <button id="signin-btn">Sign In</button>
+        <p id="logotext">Explore, Imagine, Create</p>
+    </div>
+    <h2 id="main-title"></h2>
+    <div id="author-div">
+        <p id="author-name-and-icon">Srishti Gupta</p>
+        <span id="edit" onclick="enablesave()">Edit <span class="fa fa-edit"></span></span>
+        <span id="save" onclick="enableedit()">Save <span class="fa fa-save"></span></span>
+    </div>
+    <div id="main-text-div">
+        <p id="main-text"></p>
+    </div>
+    <span id="like" onclick="increaselikecount()">Like <span class="fa fa-thumbs-up"></span></span>
+    <p id="like-text">Be the first one to like this</p>
+    <textarea id="comment-text-area" placeholder="Leave a comment"></textarea>
+    <br>
+    <button id="comment-btn" onclick="addcomments()">Comment</button>
+    <br>
+    <h5 id="all-comments-label">All Comments</h5>
+    <div id="all-comments-list">
+    </div>
+</body>
+
+</html>
