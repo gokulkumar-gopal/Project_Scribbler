@@ -1,0 +1,161 @@
+#header {
+    height: 10vh;
+    background-color: #ffeedd;
+}
+
+#logo {
+    font-family: 'Montez', cursive;
+    font-size: xx-large;
+    color: blue;
+}
+
+#logotext {
+    margin: 0px;
+    font-family: 'Ubuntu Mono';
+    font-style: italic;
+}
+
+body {
+    background-color: #ffeedd;
+}
+
+#signup-btn, #signin-btn {
+    float: right;
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+    background-color: blue;
+    color: white;
+}
+
+#all-posts-div {
+
+    /*width: 1400px;
+    height: 600px;*/
+    margin: 0 auto;
+    padding: 50px 50px 50px 150px;
+}
+
+.post-element {
+    /*width : 550px;*/
+    width: 40%;
+    height: 150px;
+    background-color: lightgrey;
+    margin: 0 50px 50px 0;
+    border-radius: 10px;
+    border-style: none;
+    display:inline-block;
+}
+
+.author-name {
+    width: 80px;
+    height: 150px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align:center;
+    font-family: 'Ubuntu Mono';
+    float: left;
+    padding: 0 5px 0 5px;
+}
+
+.content-text-div {
+    width: 450px;
+    padding: 10px;
+}
+
+.context-text {
+    left: 20px;
+    position: relative;
+}
+
+#delete {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px 0 20px;
+  }
+  
+#delete:hover,
+#delete:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#continue {
+    color: #aaa;
+    float: right;
+    right:0;
+    bottom:0;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px 0 20px;
+}
+  
+#continue:hover,
+#continue:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.text-title {
+    left: 10px;
+    color: grey;
+    font-family: 'Ubuntu Mono';
+}
+
+.text-small {
+    left: 10px;
+}
+
+.main-text {
+    padding: 0 0 0 5px;
+    font-family: 'Ubuntu Mono';
+}
+
+#signup-modal, #signin-modal {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    background-color: whitesmoke;
+    padding: 20px; 
+}
+
+#confirm-modal {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    background-color: whitesmoke;
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+#confirm-yes {
+    background-color: green;
+    width: 50px;
+    margin: 0 0 0 70px;
+    font-family: 'Ubuntu Mono';
+}
+
+#confirm-no {
+    background-color: red;
+    width: 50px;
+    margin: 0 0 0 100px;
+    font-family: 'Ubuntu Mono';
+}
+
+#delete-confirm-text {
+    font-family: 'Ubuntu Mono';
+}
+

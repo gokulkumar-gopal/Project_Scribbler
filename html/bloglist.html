@@ -1,4 +1,58 @@
 <!DOCTYPE html>
 <html>
-    
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/bloglist.css" />
+    <script src="scripts/bloglist.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div id="header">
+        <label id="logo">ScriBBler</label>
+        <button id="signup-btn" onclick="openmodal('signup-modal')">Sign Up</button>
+        <button id="signin-btn" onclick="openmodal('signin-modal')">Sign In</button>
+        <p id="logotext">Explore, Imagine, Create</p>
+    </div>
+    <div id="post-list-page">
+        <div id="all-posts-div">
+            <table>
+                <tr>
+                    <td><div class="post-element">
+                        <span id="delete" class="fa fa-trash"></span>
+                        <div class="testing">
+                            <div class="author-name"><p><br><br>Gokul Kumar Gopal</p></div>
+                            <div class="content-text-div"><p class="context-text">Hi</p></div>
+                        </div>
+                        <span id="continue" class="fa fa-ellipsis-h"></span>
+                    </div></td>
+                    <td><div class="post-element">
+                        <span id="delete" class="fa fa-trash"></span>                        
+                        <div class="author-name"><p><br><br>Gokul Kumar Gopal</p></div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><div class="post-element">
+                        <span id="delete" class="fa fa-trash"></span>                           
+                        <div class="author-name"><p><br><br>Gokul Kumar Gopal</p></div>
+                    </div></td>
+                    <td><div class="post-element">
+                        <span id="delete" class="fa fa-trash"></span>                           
+                        <div class="author-name"><p><br><br>Gokul Kumar Gopal</p></div>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><div class="post-element">
+                        <span id="delete" class="fa fa-trash"></span>                           
+                        <div class="author-name"><p><br><br>Gokul Kumar Gopal</p></div>
+                    </div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
 </html>
