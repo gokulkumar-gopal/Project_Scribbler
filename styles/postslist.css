@@ -29,9 +29,6 @@ body {
 }
 
 #all-posts-div {
-
-    /*width: 1400px;
-    height: 600px;*/
     margin: 0 auto;
     padding: 50px 50px 50px 150px;
 }
@@ -56,7 +53,6 @@ body {
     font-family: 'Ubuntu Mono';
     float: left;
     padding: 0 5px 0 5px;
-    /*display: inline-block;*/
 }
 
 .content-text-div {
@@ -74,11 +70,7 @@ body {
     float: right;
     font-size: 20px;
     font-weight: bold;
-    /*position: static;
-    top: 5px;
-    right: 5px;*/
-    margin: 0 0 0 0;
-  }
+ }
   
 #delete:hover,
 #delete:focus {
@@ -107,22 +99,22 @@ body {
 .text-title {
     color: grey;
     font-family: 'Ubuntu Mono';
-    /*display: inline-block;*/
     width: 400px;
     height: 32px;
     margin: 10px 10px 0px 10px;
-
+    text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+    overflow:hidden;              /* don't show excess chars */
 }
 
 .text-small {
-   /* margin: 10px 10px 10px 10px;*/
     width: 380px;
     height: 64px;
     margin: 5px  0  0 10px;
+    text-overflow:ellipsis;   /* IE, Safari (WebKit) */
+    overflow:hidden;              /* don't show excess chars */
 }
 
 .main-text {
-    /*padding: 0 0 0 5px;*/
     font-family: 'Ubuntu Mono';
     display: inline-block;
 }

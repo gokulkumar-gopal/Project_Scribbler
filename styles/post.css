@@ -71,19 +71,19 @@ h2 {
     cursor: pointer;
   }
 
-  #author-div {
+#author-div {
       margin: 0 0 0 100px;
       font-family: 'Ubuntu Mono';
   }
 
-  #author-name-and-icon {
+#author-name-and-icon {
       display: inline-block;
       vertical-align: top;
       font-size: large;
       margin:0 auto;
   }
 
-  #main-text-div {
+#main-text-div {
       width: 1280px;
       height: 200px;
       margin: 50px 0 0 100px;
@@ -154,4 +154,12 @@ h2 {
     width:800px;
     margin: 0;
     font-size: small;
+}
+
+#main-text {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:normal;
+    width: 1280px;
+    height: 190px;
 }
