@@ -31,6 +31,7 @@ body {
 #all-posts-div {
     margin: 0 auto;
     padding: 50px 50px 50px 150px;
+    text-align: center;
 }
 
 .post-element {
@@ -41,6 +42,7 @@ body {
     border-radius: 10px;
     border-style: none;
     display:inline-block;
+    text-align: left;
 }
 
 .author-name {
