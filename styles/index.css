@@ -1,6 +1,5 @@
 #header {
     height: 10vh;
-    background-color: whitesmoke;
 }
 
 #logo {
@@ -26,11 +25,14 @@
 
 #homepage {
     height: 90vh;
+    width: 100%;
+}
+
+body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: absolute;
-    width: 100%;
+    background-position:absolute;
 }
 
 #createposts-btn, #allposts-btn {
