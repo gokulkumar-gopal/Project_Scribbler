@@ -1,11 +1,11 @@
 var selectedmodal;
-function closemodal(element) {
+function closemodal_postlist(element) {
     var modal_to_close = document.getElementById(element);
     modal_to_close.style.display = "none";
     selectedmodal = null;
 }
 
-function openmodal(element, curr_ref) {
+function openmodal_postlist(element, curr_ref) {
     var modal_to_close = document.getElementById(element);
     modal_to_close.style.display = "block";
     selectedmodal = curr_ref.parentNode.parentNode;

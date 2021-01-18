@@ -5,20 +5,19 @@
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
     <link rel="stylesheet" type="text/css" href="../styles/post.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/common.css" />
     <script src="../scripts/post.js"></script>
+    <script src="../scripts/common.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="filldetails()">
+<body onload="filldetails();loadheaderfooter();">
     <!-- TODO: Include code for header here -->
-    <div id="header">
-        <label id="logo">ScriBBler</label>
-        <button id="signup-btn">Sign Up</button>
-        <button id="signin-btn">Sign In</button>
-        <p id="logotext">Explore, Imagine, Create</p>
-    </div>
+    <div id="header"></div>
+    <div id="signin-modal"></div>
+    <div id="signup-modal"></div>
     <h2 id="main-title"></h2>
     <div id="author-div">
         <p id="author-name-and-icon">Srishti Gupta</p>

@@ -23,32 +23,12 @@
     color: white;
 }
 
-#homepage {
-    height: 90vh;
-    width: 100%;
-}
-
-body {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position:absolute;
-}
-
-#createposts-btn, #allposts-btn {
-    margin: 0 10px 0 10px;
-    font-size: 20px;
-    padding: 10px;
-    background-color: orange;
-    color: black;
-}
-
-#create-post-form {
+#signup-form, #signin-form {
     font-family:Arial, Helvetica, sans-serif;
     font-size: medium;
 }
 
-#name, #username, #password, #con-password, #title, #contents {
+#name, #username, #password, #con-password, #title {
     margin: 10px 10px 10px 0;
     width: 300px;
     background-color: lightgrey;
@@ -61,30 +41,15 @@ body {
     margin: 0;
 }
 
-#singup-submit-btn, #signin-submit-btn, #create-post-btn {
+#singup-submit-btn, #signin-submit-btn {
     background-color: green;
     padding: 5px;
     width:300px;
     margin: 0 5px 0 5px;
 }
 
-#create-post-btn {
-    margin: 0 auto;
-    display: block;
-}
-
 #not-a-member {
     text-align: center;
-}
-
-#posts {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: table-cell;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 #signup-modal, #signin-modal {
@@ -97,21 +62,6 @@ body {
     transform: translate(-50%, -50%);  
     background-color: whitesmoke;
     padding: 20px; 
-}
-
-#create-post-modal {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1200px;
-    height: 550px;
-    display: none;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);  
-    background-color: whitesmoke;
-    padding: 20px;
-    font-family: 'Ubuntu Mono';
 }
 
 /* The Close Button */
@@ -128,12 +78,3 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-
-#contents {
-    width: 1200px;
-    height: 350px;
-  }
-
-#title {
-    width: 1200px;
-}

@@ -3,54 +3,30 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/common.css" />
     <script src="scripts/index.js"></script>
+    <script src="scripts/common.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
 </head>
 
-<body onload="removelocalstorage()">
+<body onload="removelocalstorage(); loadheaderfooter();">
     <!-- TODO: Include all your code for the header and home page here -->
     <div>
         <div id="header">
-            <label id="logo">ScriBBler</label>
+            <!--<label id="logo">ScriBBler</label>
             <button id="signup-btn" onclick="openmodal('signup-modal')">Sign Up</button>
             <button id="signin-btn" onclick="openmodal('signin-modal')">Sign In</button>
-            <p id="logotext">Explore, Imagine, Create</p>
+            <p id="logotext">Explore, Imagine, Create</p>-->
         </div>
         <div id="homepage">
             <div id="posts">
                 <button id="allposts-btn" onclick="window.open('html/postslist.html');">All Posts</button>
                 <button id="createposts-btn" onclick="openmodal('create-post-modal')">Create Post</button>
             </div>
-            <div id="signup-modal">
-                <label id="get-started">Get Started</label>
-                <span id="close" onclick="closemodal('signup-modal')">&times;</span>
-                <hr>
-                <form id="signup-form">
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="invalidInput(this)"><br>
-                    <label for="username">Username</label><br>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required oninput="invalidInput(this)"><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required oninput="invalidInput(this)"><br>
-                    <label for="con-password>">Confirm Password</label><br>
-                    <input type="password" id="con-password" name="con-password" placeholder="Re-enter your password" required oninput="invalidInput(this)"><br><br>
-                    <button id="singup-submit-btn">Sign Up</button>
-                </form>
-            </div>
-            <div id="signin-modal">
-                <label id="welcome-back">Welcome Back!</label>
-                <span id="close" onclick="closemodal('signin-modal')">&times;</span>
-                <hr>
-                <form id="signin-form">
-                    <label for="username">Username</label><br>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required oninput="invalidInput(this)"><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required oninput="invalidInput(this)"><br><br>
-                    <button id="signin-submit-btn">Sign In</button><br>
-                    <p id="not-a-member">Not a member ? <a id="open-signup" href="#" onclick="closemodal('signin-modal'); openmodal('signup-modal')">Sign Up</a></p>
-                </form>
-            </div>
+            <!--signin and signup modals loaded dynamically from common.js -->
+            <div id="signup-modal"></div>
+            <div id="signin-modal"></div>
             <div id="create-post-modal">
                 <label id="pen-your-post">Pen Your Post</label>
                 <span id="close" onclick="closemodal('create-post-modal')">&times;</span>
@@ -59,7 +35,7 @@
                     <label for="title">Title</label><br>
                     <input type="text" id="title" name="username" placeholder="Enter title of your post" required oninput="invalidInput(this)"><br>
                     <label for="contents">Contents</label><br>
-                    <textarea id="contents"></textarea><br>
+                    <textarea id="contents" placeholder="Enter contents of your post"></textarea><br>
                     <button id="create-post-btn">Create</button>
                 </form>
             </div>
